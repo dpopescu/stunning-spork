@@ -7,14 +7,15 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
-    <script src="https://assets.adobedtm.com/3149c49c3910/4b56aed70c0a/launch-d1096ad1e2d7-development.min.js" async></script>
+    <script src="https://assets.adobedtm.com/3149c49c3910/4b56aed70c0a/launch-d1096ad1e2d7-development.min.js"
+        async></script>
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -25,6 +26,21 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script>
+        alloy("configure", {
+            defaultConsent: "in",
+            edgeDomain: "edge-int.adobedc.net",
+            edgeConfigId: "19fc5fe9-37df-46da-8f5c-9eeff4f75ed9:prod",
+            orgId: "745F37C35E4B776E0A49421B@AdobeOrg",
+            debugEnabled: true,
+            idMigrationEnabled: false,
+            prehidingStyle: "body { opacity: 0 !important }"
+        });
+
+        alloy("sendEvent", {
+            "renderDecisions": true
+        });
+    </script>
 </head>
 
 <body>
@@ -135,14 +151,18 @@
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
                                     <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker"/>
+                                        <input type="text" class="form-control p-4 datetimepicker-input"
+                                            placeholder="Depart Date" data-target="#date1"
+                                            data-toggle="datetimepicker" />
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
                                     <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker"/>
+                                        <input type="text" class="form-control p-4 datetimepicker-input"
+                                            placeholder="Return Date" data-target="#date2"
+                                            data-toggle="datetimepicker" />
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +179,8 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
+                        <button class="btn btn-primary btn-block" type="submit"
+                            style="height: 47px; margin-top: -2px;">Submit</button>
                     </div>
                 </div>
             </div>
@@ -231,7 +252,7 @@
                         </div>
                     </div>
                     <!-- Blog Detail End -->
-    
+
                     <!-- Comment List Start -->
                     <div class="bg-white" style="padding: 30px; margin-bottom: 30px;">
                         <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">3 Comments</h4>
@@ -271,7 +292,7 @@
                         </div>
                     </div>
                     <!-- Comment List End -->
-    
+
                     <!-- Comment Form Start -->
                     <div class="bg-white mb-3" style="padding: 30px;">
                         <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Leave a comment</h4>
@@ -288,7 +309,7 @@
                                 <label for="website">Website</label>
                                 <input type="url" class="form-control" id="website">
                             </div>
-    
+
                             <div class="form-group">
                                 <label for="message">Message *</label>
                                 <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
@@ -301,13 +322,14 @@
                     </div>
                     <!-- Comment Form End -->
                 </div>
-    
+
                 <div class="col-lg-4 mt-5 mt-lg-0">
                     <!-- Author Bio -->
                     <div class="d-flex flex-column text-center bg-white mb-5 py-5 px-4">
                         <img src="img/user.jpg" class="img-fluid mx-auto mb-3" style="width: 100px;">
                         <h3 class="text-primary mb-3">John Doe</h3>
-                        <p>Conset elitr erat vero dolor ipsum et diam, eos dolor lorem, ipsum sit no ut est  ipsum erat kasd amet elitr</p>
+                        <p>Conset elitr erat vero dolor ipsum et diam, eos dolor lorem, ipsum sit no ut est ipsum erat
+                            kasd amet elitr</p>
                         <div class="d-flex justify-content-center">
                             <a class="text-primary px-2" href="">
                                 <i class="fab fa-facebook-f"></i>
@@ -326,7 +348,7 @@
                             </a>
                         </div>
                     </div>
-    
+
                     <!-- Search Form -->
                     <div class="mb-5">
                         <div class="bg-white" style="padding: 30px;">
@@ -373,7 +395,7 @@
                             </ul>
                         </div>
                     </div>
-    
+
                     <!-- Recent Post -->
                     <div class="mb-5">
                         <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Post</h4>
@@ -399,7 +421,7 @@
                             </div>
                         </a>
                     </div>
-    
+
                     <!-- Tag Cloud -->
                     <div class="mb-5">
                         <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Tag Cloud</h4>
@@ -426,7 +448,8 @@
                 <a href="" class="navbar-brand">
                     <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
                 </a>
-                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed
+                    vero lorem dolor dolor</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
                 <div class="d-flex justify-content-start">
                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
@@ -467,7 +490,8 @@
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
                 <div class="w-100">
                     <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                        <input type="text" class="form-control border-light" style="padding: 25px;"
+                            placeholder="Your Email">
                         <div class="input-group-append">
                             <button class="btn btn-primary px-3">Sign Up</button>
                         </div>
@@ -476,7 +500,8 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
                 <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
